@@ -1,16 +1,31 @@
 # sql-serveur
 
-Cours SQL Server : performance à grande échelle (SQL Server 2019 et 2022).
+Cours SQL Server : performance à grande échelle. Parcours de trois mois, lab
+sur SQL Server 2025, pour passer du tuning approximatif à l'expertise sur une
+base volumineuse.
 
-- `cours/cours-sql-server-performance.md` : le cours, en Markdown. Partie 1 : 15 épisodes de théorie qui suivent et prolongent *How to Think Like the SQL Server Engine* de Brent Ozar. Partie 2 : 13 chapitres pratiques (commandes, diagnostic, exercices sur un lab StackOverflow).
-- `docs/index.html` : la même chose en page HTML autonome (sommaire latéral, coloration T-SQL, boutons copier, thème clair et sombre, mise en page d'impression). Compatible GitHub Pages en pointant sur le dossier `docs/`.
-- `build.py` : régénère `docs/index.html` à partir du Markdown.
+**[Lire le cours](https://cchopin.github.io/sql-serveur/)**
 
-## Régénérer la version HTML
+23 modules répartis en quatre phases, et un programme de 60 séances d'une heure
+sur 12 semaines. Chaque module se lit la veille, chaque séance se termine sur
+une mesure. La progression (modules acquis, séances faites) se garde dans le
+navigateur du lecteur.
 
-```bash
-pip install markdown      # une seule fois
-python3 build.py
-```
+| Phase | Modules | Objet |
+|---|---|---|
+| 1 · Fondations | 1 à 5 | pages, buffer pool, types, lecture d'un plan |
+| 2 · Index et requêtes | 6 à 13 | index, sargabilité, jointures, statistiques, mémoire |
+| 3 · Grande échelle | 14 à 19 | parallélisme, verrous, partitionnement, columnstore |
+| 4 · Exploitation | 20 à 23 | Query Store, wait stats, configuration, prise de poste |
 
-Le script ne dépend que de `python-markdown`. La coloration SQL et la navigation sont produites au build, la page n'a besoin d'aucune bibliothèque JavaScript externe (seules les polices sont chargées depuis Google Fonts, avec repli sur les polices système).
+## Organisation du dépôt
+
+- `docs/index.html` : **le cours**, page autonome publiée par GitHub Pages.
+  Sommaire latéral, coloration T-SQL, boutons copier, thème clair et sombre,
+  mise en page d'impression, suivi de progression. Aucune dépendance autre que
+  les polices Google, avec repli sur les polices système.
+- `cours/cours-sql-server-performance.md` et `build.py` : **l'édition
+  précédente**, 15 épisodes de théorie dans la lignée de *How to Think Like the
+  SQL Server Engine* de Brent Ozar, plus 13 chapitres pratiques, et le script
+  qui en produisait la page HTML. Conservés pour mémoire : la page publiée
+  n'en est plus issue, et `build.py` l'écraserait.

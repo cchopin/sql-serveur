@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- une table est une pile de pages : trois barres nettes, séparées, la plus
+       haute dans l'accent du site. dessin volontairement pauvre, c'est ce qui
+       reste lisible à 16 pixels. -->
+  <rect width="64" height="64" rx="12" fill="#10151B"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="11" fill="none" stroke="#2B3540" stroke-width="2"/>
+  <rect x="13" y="13" width="38" height="11" rx="3" fill="#7DB3E3"/>
+  <rect x="13" y="27" width="38" height="11" rx="3" fill="#4D7CA6"/>
+  <rect x="13" y="41" width="38" height="11" rx="3" fill="#2F4B63"/>
+</svg>

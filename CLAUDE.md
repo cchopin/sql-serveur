@@ -35,10 +35,22 @@ rapatriée ici. La procédure, à refaire à chaque reprise :
    progression par le stockage d'artefact, runtime qui n'existe pas hors de
    claude.ai. La page écrit déjà dans `localStorage`, donc le retrait ne change
    rien au fonctionnement ;
-4. vérifier qu'il ne reste aucune occurrence de `window.claude`, puis pousser.
+4. **retirer le bloc `claude-hljs-runtime`**, du commentaire
+   `<!--claude-hljs-runtime-begin` au `<!--claude-hljs-runtime-end-->`. La
+   plateforme d'artefact injecte là un highlight.js de 186 grammaires, soit
+   0,6 Mo, qui ne sert à rien ici : 337 des 366 blocs portent déjà leur
+   coloration à la main et le moteur saute tout bloc contenant des éléments,
+   les 29 autres n'ont aucun style puisque la page ne définit aucune règle
+   `.hljs-*` ;
+5. **remettre les trois `<link>` d'icône dans le `<head>`**. La plateforme
+   d'artefact possède le `<head>`, donc le contenu commence dans le `<body>` :
+   un `link rel=icon` laissé là est ignoré par Chrome ;
+6. vérifier qu'il ne reste aucune occurrence de `window.claude` ni de
+   `claude-hljs`, puis pousser.
 
-`highlight.js` est embarqué dans la page, d'où sa taille. Les seules ressources
-externes sont les polices Google, avec repli sur les polices système.
+Les seules ressources externes sont les polices Google, avec repli sur les
+polices système. La page fait environ 1,5 Mo, 360 Ko une fois compressée : le
+reste est le cours lui-même.
 
 ## Publication
 

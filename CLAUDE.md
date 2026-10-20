@@ -48,9 +48,16 @@ rapatriée ici. La procédure, à refaire à chaque reprise :
 6. vérifier qu'il ne reste aucune occurrence de `window.claude` ni de
    `claude-hljs`, puis pousser.
 
-Les seules ressources externes sont les polices Google, avec repli sur les
-polices système. La page fait environ 1,5 Mo, 360 Ko une fois compressée : le
-reste est le cours lui-même.
+7. **remplacer la feuille de style Google Fonts par les `@font-face` locales**
+   (`docs/fonts/`, neuf fichiers woff2, 192 Ko). La feuille de Google est
+   bloquante : tant qu'elle n'arrive pas, rien ne s'affiche. Sur un poste où
+   `fonts.googleapis.com` ne répond pas, et c'est le cas de celui de l'auteur,
+   la page restait blanche trente secondes. Mesuré : 25,6 s de rendu avant,
+   0,9 s après.
+
+**La page ne doit dépendre d'aucun tiers.** Tout est servi par le dépôt :
+polices comprises. Elle fait environ 1,5 Mo, 375 Ko compressée, et le reste
+est le cours lui-même.
 
 ## Publication
 

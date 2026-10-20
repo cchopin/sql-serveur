@@ -1,3 +1,10 @@
+> **Édition précédente, non maintenue.** Ce document date du 18 septembre 2026
+> et n'a pas reçu les corrections apportées depuis à la page publiée, dont des
+> scripts T-SQL erronés. Le cours à jour est
+> [docs/index.html](../docs/index.html), publié sur
+> <https://cchopin.github.io/sql-serveur/>. Ne pas exécuter les scripts de ce
+> fichier sans les vérifier contre la page.
+
 # Cours SQL Server : performance à grande échelle
 
 Parcours progressif pour devenir opérationnel sur le tuning d'une base SQL Server volumineuse (tables de plusieurs centaines de millions à plusieurs milliards de lignes). Le cours est en deux parties : la première explique les mécaniques internes du moteur, de manière à comprendre et pouvoir réexpliquer chaque concept ; la seconde donne les commandes, les méthodes de diagnostic et des exercices sur un lab. La première partie suit la démarche de la formation gratuite How to Think Like the SQL Server Engine de Brent Ozar et la prolonge.

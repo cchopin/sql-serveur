@@ -24,8 +24,9 @@ navigateur du lecteur.
   Sommaire latéral, coloration T-SQL, boutons copier, thème clair et sombre,
   mise en page d'impression, suivi de progression. Aucune dépendance autre que
   les polices Google, avec repli sur les polices système.
-- `cours/cours-sql-server-performance.md` et `build.py` : **l'édition
-  précédente**, 15 épisodes de théorie dans la lignée de *How to Think Like the
-  SQL Server Engine* de Brent Ozar, plus 13 chapitres pratiques, et le script
-  qui en produisait la page HTML. Conservés pour mémoire : la page publiée
-  n'en est plus issue, et `build.py` l'écraserait.
+La page est la seule source : elle s'édite directement, il n'y a ni Markdown
+ni étape de build. Une édition précédente existait, 15 épisodes générés depuis
+un fichier Markdown par un script `build.py` ; elle a été retirée le 20 octobre
+2026, ses scripts T-SQL ayant été corrigés depuis sans l'être là, et le script
+écrasait la page publiée s'il était relancé. L'historique git la conserve, au
+commit `6afdc39` et avant.

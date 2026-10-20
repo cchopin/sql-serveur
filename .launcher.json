@@ -1,0 +1,14 @@
+{
+  "title": "sql-serveur",
+  "description": "Cours SQL Server sur la performance à grande échelle : 15 épisodes de théorie dans la lignée de Brent Ozar, 13 chapitres pratiques, publiés en page autonome par build.py.",
+  "status": "wip",
+  "tags": [
+    "sql",
+    "pedagogie",
+    "python"
+  ],
+  "target": "",
+  "url": "",
+  "created": 1789750244,
+  "last_opened": 1792520979
+}

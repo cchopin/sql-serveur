@@ -2,3 +2,9 @@
 node_modules/
 .env
 __pycache__/
+
+# Rien de ce que Claude écrit en local ne part sur GitHub. La mémoire
+# automatique vit ailleurs (~/.claude/projects/<clé>/memory, versionnée dans
+# launcher_config, privé), mais ces deux-là se créent dans le dépôt.
+.claude/
+CLAUDE.local.md
